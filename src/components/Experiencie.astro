@@ -1,0 +1,30 @@
+---
+import ExperienciaItem from "./ExperienciaItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Estudiante de Sistemas Microinformáticos y Redes - Institu Sabadell",
+    description: "Actualmente estoy cursando el segunda curso de grado medio de informática, donde he aprendido a montar y configurar ordenadores, así como a configurar redes y servidores. También he realizado proyectos en HTML y CSS, y conocimientos avanzados en ofimática.",
+  },
+  {
+    date: "Noviembre 2024",
+    title: "Técnico informático - Gigalink Sabadell",
+    description: "He trabajado durante 5 meses como técnico en informática, he adquirido experiencia en reparación y mantenimiento de ordenadores, así como instalación de software y hardware.",
+  },
+
+];
+---
+
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-2">
+    {
+        EXPERIENCE.map(experiencie => (
+            <li class="mb-8 ms-4">
+                <ExperienciaItem {...experiencie} />
+            </li>
+        ))
+    }                  
+</ol>
+

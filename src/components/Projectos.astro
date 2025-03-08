@@ -1,0 +1,58 @@
+---
+import TailwindCSS from "./icons/TailwindCSS.astro"
+import HTML from "./icons/HTML.astro"
+import AstroIcon from "./icons/AstroIcon.astro"
+
+
+const TAGS = {
+    Astro: {
+        name: "Astro",
+        class: "bg-[#3e257a] text-white",
+        icon: AstroIcon,
+        
+    },
+    TailwindCSS : {
+        name: "Tailwind CSS",
+        class: "bg-[#003159] text-white",
+        icon: TailwindCSS,
+    },
+    HTML: {
+        name: "HTML",
+        class: "bg-[#7a3625] text-white",
+        icon: HTML,
+}
+}
+
+
+const PROJECTS = [
+  {
+    title: "Porfolio - Alex Aperador", 
+    description: "Este es mi porfolio personal, donde muestro mis proyectos y habilidades como desarrollador web.",
+    link: "https://github.com/aaleex05/aaleex05",
+    GitHub: "https://github.com/aaleex05/aaleex05",
+    image: "/public/projects/porfolio.webp",
+    tags: [TAGS.Astro, TAGS.TailwindCSS, TAGS.HTML],
+  }
+  
+]
+---
+
+{
+    PROJECTS.map(({ title, description, tags, image }) => (
+        <article>
+            <h3 class="text-2xl font-semibold text-blue-400 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <ul class="flex gap-x-2 flex-row pb-4">
+                {tags.map((tag) => (
+                    <li>
+                    <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-4`}>
+                        <tag.icon class="size-4"/>
+                        {tag.name}
+                    </span>
+                    </li>
+                ))}
+            </ul>
+            <img class="rounded shadow-2xl shadow-white/10" src={image} alt="Captura de pantalla del projecto"/>
+        </article>
+    ))
+}

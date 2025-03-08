@@ -1,11 +1,96 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedIn from '../components/icons/LinkedinIcon.astro';
+import GitHub from '../components/icons/GithubIcon.astro';
+import Mail from '../components/icons/MailIcon.astro';
+import Experiencie from '../components/Experiencie.astro';
+import Projectos from '../components/Projectos.astro';
+import Briefcase from '../components/icons/BriefcaseIcon.astro';
+import Code from '../components/icons/CodeIcon.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Porfolio de Alex Aperador - Desarrollador y Programador Web"
+	description="Contrata a Alex Aperador Salcedo como Desarrollador y Programador Web.">
+
+	<main class="px-5 md:px-10 lg:px-20 xl:px-40 2xl:px-80">
+		<SectionContainer class="py-36 pb-24">
+			<img
+			class="rounded-full size-16 mb-4"
+			src="https://avatars.githubusercontent.com/u/154633757?v=4"
+			alt="alex photo">
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-3 pb-6 lg:pb-10">
+				Hey, soy Alex Aperador
+				<a
+				href="https://linkedin.com/in/alex-aperador"
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center">
+				<Badge>Dispoible para trabajar</Badge>
+				</a>
+			</h1>
+
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+				<span class="font-bold">
+					Lorem ipsum dolor sitamet
+				</span>
+
+				<span class="opacity-80">
+					consectetur adipisicing elit.
+				</span>
+				
+				<span class="font-bold text-blue-400">
+				A ab accusantium nemo totam consectetur voluptatibus numquam delectus adipisci
+				</span>
+
+				<span class="opacity-80">
+				quam veniam perferendis aut iure nulla, rem sed fugiat molestias. Eius, aliquam?
+				</span>
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+
+				<SocialPill href="https://linkedin.com/in/alex-aperador">
+					<LinkedIn
+					class="size-4 lg:size-6"/>
+   					LinkedIn
+				</SocialPill>
+
+				<SocialPill href="https://github.com/aaleex05">
+					<GitHub
+					class="size-4 lg:size-6"/>
+   					GitHub
+				</SocialPill>
+
+				<SocialPill href="mailto:alexapsa2007@gmail.com">
+					<Mail
+					class="size-4"/>
+   					alexapsa2007@gmail.com
+				</SocialPill>
+
+			</nav>
+
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-7 flex gap-x-2 items-center">
+				Experiencia Laboral
+				<Briefcase
+				class="size-7"/>
+			</h2>
+			<Experiencie/>
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-7 flex gap-x-2 items-center">
+				Proyectos
+				<Code
+				class="size-7"/>
+			</h2>
+			<Projectos/>
+		</SectionContainer>
+
+	</main>
 </Layout>
