@@ -6,9 +6,7 @@ Este es el repositorio del portafolio de Alex Aperador, un desarrollador y progr
 
 Astro ⚡
 
-HTML/CSS 🎨
-
-JavaScript 🛠️
+HTML/Tailwind 🎨
 
 Componentes Personalizados (Astro Components)
 
