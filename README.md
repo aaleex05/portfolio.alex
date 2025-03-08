@@ -29,10 +29,7 @@ Componentes Personalizados (Astro Components)
 
 📸 Vista Previa
 
-![image](https://github.com/user-attachments/assets/3783da34-37ad-4c7d-af87-1f2d655a19fe)
-
-
-
+![933_1x_shots_so](https://github.com/user-attachments/assets/682d99a8-8143-4f80-94a6-f42102baa4eb)
 
 🌟 Características
 
@@ -43,4 +40,6 @@ Componentes Personalizados (Astro Components)
 
 📩 Contacto
 
-📧 Email: alexapsa2007@gmail.com🔗 LinkedIn: linkedin.com/in/alex-aperador🐙 GitHub: github.com/aaleex05
+📧 Email: alexapsa2007@gmail.com
+🔗 LinkedIn: linkedin.com/in/alex-aperador
+🐙 GitHub: github.com/aaleex05
