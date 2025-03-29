@@ -17,8 +17,11 @@ Componentes Personalizados (Astro Components)
 🌟 Características
 
 ✅ Sección de presentación con foto y estado laboral.
+<br>
 ✅ Experiencia laboral destacada.
+<br>
 ✅ Proyectos recientes.
+<br>
 ✅ Enlaces directos a redes sociales (LinkedIn, GitHub, Email).
 
 📩 Contacto
