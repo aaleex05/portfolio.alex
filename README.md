@@ -27,5 +27,7 @@ Componentes Personalizados (Astro Components)
 📩 Contacto
 
 📧 Email: alexapsa2007@gmail.com
+<br>
 🔗 LinkedIn: linkedin.com/in/alex-aperador
+<br>
 🐙 GitHub: github.com/aaleex05
