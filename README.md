@@ -30,4 +30,4 @@ Componentes Personalizados (Astro Components)
 <br>
 🔗 LinkedIn: https://linkedin.com/in/alex-aperador
 <br>
-🐙 GitHub: github.com/aaleex05
+🐙 GitHub: https://github.com/aaleex05
