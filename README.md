@@ -10,23 +10,6 @@ HTML/Tailwind 🎨
 
 Componentes Personalizados (Astro Components)
 
-📂 Estructura del Proyecto
-
-|-- layouts/
-|   |-- Layout.astro
-|-- components/
-|   |-- Badge.astro
-|   |-- SectionContainer.astro
-|   |-- SocialPill.astro
-|   |-- icons/
-|       |-- LinkedinIcon.astro
-|       |-- GithubIcon.astro
-|       |-- MailIcon.astro
-|       |-- BriefcaseIcon.astro
-|       |-- CodeIcon.astro
-|-- pages/
-|   |-- index.astro (Página principal)
-
 📸 Vista Previa
 
 ![933_1x_shots_so](https://github.com/user-attachments/assets/682d99a8-8143-4f80-94a6-f42102baa4eb)
@@ -34,12 +17,17 @@ Componentes Personalizados (Astro Components)
 🌟 Características
 
 ✅ Sección de presentación con foto y estado laboral.
+<br>
 ✅ Experiencia laboral destacada.
+<br>
 ✅ Proyectos recientes.
+<br>
 ✅ Enlaces directos a redes sociales (LinkedIn, GitHub, Email).
 
 📩 Contacto
 
 📧 Email: alexapsa2007@gmail.com
-🔗 LinkedIn: linkedin.com/in/alex-aperador
-🐙 GitHub: github.com/aaleex05
+<br>
+🔗 LinkedIn: https://linkedin.com/in/alex-aperador
+<br>
+🐙 GitHub: https://github.com/aaleex05
