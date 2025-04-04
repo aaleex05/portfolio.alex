@@ -1,18 +1,16 @@
 ---
-import TailwindCSS from "./icons/TailwindCSS.astro"
-import HTML from "./icons/HTML.astro"
-import AstroIcon from "./icons/AstroIcon.astro"
-import DjangoIcon from "./icons/DjangoIcon.astro"
-
+import TailwindCSS from "./icons/TailwindCSS.astro";
+import HTML from "./icons/HTML.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import DjangoIcon from "./icons/DjangoIcon.astro";
 
 const TAGS = {
     Astro: {
         name: "Astro",
         class: "bg-[#3e257a] text-white inset-shadow-sm inset-shadow-purple-500/70",
         icon: AstroIcon,
-
     },
-    TailwindCSS : {
+    TailwindCSS: {
         name: "Tailwind CSS",
         class: "bg-[#003159] text-white inset-shadow-sm inset-shadow-blue-500/70",
         icon: TailwindCSS,
@@ -27,46 +25,45 @@ const TAGS = {
         class: "bg-[#205943] text-white inset-shadow-sm inset-shadow-green-500/70",
         icon: DjangoIcon,
     },
-}
-
+};
 
 const PROJECTS = [
-  {
-    title: "Portfolio - Alex Aperador", 
-    description: "Este es mi portfolio personal, donde muestro mis proyectos y habilidades como desarrollador web.",
-    link: "https://github.com/aaleex05/aaleex05",
-    GitHub: "https://github.com/aaleex05/portfolio.alex/",
-    image: "/projects/porfolio.webp",
-    tags: [TAGS.Astro, TAGS.TailwindCSS, TAGS.HTML],
-  },
-  {
-    title: "Creación y Gestion de Eventos de Forma Sencilla", 
-    description: "Una aplicación web para la creación y gestión de eventos de manera sencilla y eficiente, permitiendo a los usuarios organizar, administrar y compartir eventos con facilidad.",
-    link: "https://github.com/aaleex05/aaleex05",
-    GitHub: "https://github.com/aaleex05/aaleex05",
-    image: "/projects/gestionEventos.webp",
-    tags: [TAGS.Django, TAGS.TailwindCSS, TAGS.HTML],
-  },
-  
-]
+    {
+        title: "Portfolio - Alex Aperador",
+        description:
+            "Este es mi portfolio personal, donde muestro mis proyectos y habilidades como desarrollador web.",
+        link: "https://github.com/aaleex05/aaleex05",
+        GitHub: "https://github.com/aaleex05/portfolio.alex/",
+        image: "/projects/porfolio.webp",
+        tags: [TAGS.Astro, TAGS.TailwindCSS, TAGS.HTML],
+    },
+];
 ---
 
 {
     PROJECTS.map(({ title, description, tags, image }) => (
         <article class="mb-8">
-            <h3 class="lg:text-3xl text-2xl font-semibold text-blue-400 mb-2">{title}</h3>
+            <h3 class="lg:text-3xl text-2xl font-semibold text-blue-400 mb-2">
+                {title}
+            </h3>
             <p class="lg:text-lg text-lm mb-4 text-pretty">{description}</p>
             <ul class="flex gap-x-2 flex-row pb-4">
                 {tags.map((tag) => (
                     <li>
-                    <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-4`}>
-                        <tag.icon class="size-4"/>
-                        {tag.name}
-                    </span>
+                        <span
+                            class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-4`}
+                        >
+                            <tag.icon class="size-4" />
+                            {tag.name}
+                        </span>
                     </li>
                 ))}
             </ul>
-            <img class="rounded shadow-2xl shadow-white/10" src={image} alt="Captura de pantalla del projecto"/>
+            <img
+                class="rounded shadow-2xl shadow-white/10"
+                src={image}
+                alt="Captura de pantalla del projecto"
+            />
         </article>
     ))
 }
