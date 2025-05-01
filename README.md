@@ -1,6 +1,6 @@
 📌 Portafolio de Alex Aperador
 
-Este es el repositorio del portafolio de Alex Aperador, un desarrollador y programador web. El proyecto está construido utilizando Astro y componentes personalizados para mostrar la experiencia laboral, proyectos y enlaces a redes sociales.
+Este es el repositorio del portafolio de Alex Aperador, un desarrollador y programador web. El proyecto está construido utilizando Astro y componentes personalizados para mostrar la experiencia laboral y proyectos.
 
 🚀 Tecnologías Utilizadas
 
